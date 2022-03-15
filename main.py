@@ -62,7 +62,7 @@ def collect_oracle_cloud_ips():
             sys.exit(1)
 
     if not get_oracle_cloud:
-        print('%s[+] Download New %s Cloud File%s' % (Bcolors.OKGREEN, _name_, Bcolors.ENDC))
+        print('%s[+] Downloaded %s Cloud File Found.%s' % (Bcolors.OKGREEN, _name_, Bcolors.ENDC))
         r = requests.get(_url, headers=_headers_, verify=True)
         if r.status_code == 200:
             body = r.text
